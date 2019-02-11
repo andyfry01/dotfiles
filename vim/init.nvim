@@ -1,0 +1,15 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc
+
+" Setup vim-plug: https://github.com/junegunn/vim-plug/blob/master/README.md
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'https://github.com/rakr/vim-one'
+Plug 'https://github.com/mattn/emmet-vim'
+call plug#end()
+
+" Color scheme!
+" Vim-one color theme
+colorscheme one
+set background=dark " for the dark version
+" set background=light " for the light version
